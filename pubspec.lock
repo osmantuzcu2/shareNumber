@@ -196,9 +196,9 @@ packages:
   share_handler:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: share_handler
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.16"
   share_handler_android:
     dependency: transitive
