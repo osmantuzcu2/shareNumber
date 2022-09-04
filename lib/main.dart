@@ -23,7 +23,9 @@ class _MyAppState extends State<MyApp> {
   String numberr = "";
   @override
   Widget build(BuildContext context) {
-    read();
+    if (Platform.isAndroid) {
+      read();
+    }
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -35,7 +37,7 @@ class _MyAppState extends State<MyApp> {
               //TextButton(onPressed: read, child: const Text("read")),
               //Text("Conversation Identifier: ${media?.conversationIdentifier}"),
               const SizedBox(height: 10),
-              // Text("Shared text: ${media?.content}"),
+              if (Platform.isIOS) Text("Tel Number IOS: ${media?.content}"),
               const SizedBox(height: 10),
               Text(
                   "Shared files: ${media?.attachments?.length} vcf file shared"),

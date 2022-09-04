@@ -196,9 +196,11 @@ packages:
   share_handler:
     dependency: "direct main"
     description:
-      name: share_handler
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: share_handler
+      ref: HEAD
+      resolved-ref: "523f5a26f8baa84a57bd674fc800f24925bd1961"
+      url: "https://github.com/osmantuzcu2/share_handler.git"
+    source: git
     version: "0.0.16"
   share_handler_android:
     dependency: transitive
